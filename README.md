@@ -8,3 +8,5 @@ This is just a simple program, where you enter the characters (e.g. from crosswo
 When you gain focus, all red colors are removed.
 
 ![Example](http://shrani.si/f/2Q/T6/rMxwZ2b/wordfinding.png)
+
+Open with IntelliJ IDEA, edit configurations (Application add main class). Tested using Windows 7.
