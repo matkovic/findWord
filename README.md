@@ -7,6 +7,11 @@ Program is written in java using IntelliJ IDEA 14.1.4.
 This is just a simple program, where you enter the characters (e.g. from crossword magazine) and then enter the word you are searching. Program will look up in every direction if the word exists and mark it red.
 When you gain focus, all red colors are removed.
 
-![Example](http://shrani.si/f/2Q/T6/rMxwZ2b/wordfinding.png)
+![Example](imgs/findword.jpg)
 
-Open with IntelliJ IDEA, edit configurations (Application, add main class). Tested using Windows 7.
+Tested working in java 11.
+
+```
+javac .\FindInAllDirections.java
+java FindInAllDirections
+```

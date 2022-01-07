@@ -8,11 +8,11 @@ import java.util.Scanner;
  * Created by matW7 on 16.9.2015.
  */
 public class FindInAllDirections {
-    private JPanel panelMain;
-    private JButton buttonFind;
-    private JTextField textFieldFind;
-    private JTextPane textPane;
-    private JPanel panelBottom;
+    private JPanel panelMain = new JPanel();
+    private JButton buttonFind = new JButton("Find");
+    private JTextField textFieldFind = new JTextField();
+    private JTextPane textPane = new JTextPane();
+    private JPanel panelBottom = new JPanel();
     private char[][] charArray; //2d array of chars from textPane
 
     public FindInAllDirections() {
@@ -22,6 +22,18 @@ public class FindInAllDirections {
                 onFind();
             }
         };
+
+        panelMain.setLayout(new GridLayout());
+        panelBottom.setLayout(new GridLayout());
+
+        textPane.setFont(new java.awt.Font("Monospaced", 0, 10)); // NOI18N
+
+
+        panelBottom.add(buttonFind);
+        panelBottom.add(textFieldFind);
+        panelMain.add(panelBottom);
+        panelMain.add(textPane);
+        
 
         //on "enter" or click button go to onFind()
         buttonFind.addActionListener(action);
